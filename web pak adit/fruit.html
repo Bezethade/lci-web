@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lci</title>
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- navbar section start -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">LCI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ms-2">
+                        <a class="nav-link dropdown-toggle" href="#produk" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="kelapa.html">kelapa</a></li>
+                            <li><a class="dropdown-item" href="fruit.html">fruit</a></li>
+                            <li><a class="dropdown-item" href="coffe.html">coffe</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar section end -->
+
+
+
+
+
+
+
+    <!-- produk section start -->
+    <section id="produk" class="produk mt-5 mt-md-0 p-md-5">
+        <div class="container">
+            <header class="mb-5 mt-5">
+                <span class="badge text-bg-warning">Product</span>
+                <h3>Detail Produk</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quod molestias ratione et repellat
+                    tempore?</p>
+            </header>
+            <div class="row">
+                <div class="col-lg-6 mt-lg-2">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/img/fruit.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/fruit.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/fruit.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev mb-5" type="button"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon mb-5" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next mb-5" type="button"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon mb-5" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <div class="row mt-3">
+                            <div class="col" style="cursor: pointer;">
+                                <img src="./assets/img/fruit.jpg" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="0" class="img-fluid" alt="1">
+                            </div>
+                            <div class="col" style="cursor: pointer;">
+                                <img src="./assets/img/fruit.jpg" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="1" class="img-fluid" alt="2">
+                            </div>
+                            <div class="col" style="cursor: pointer;">
+                                <img src="./assets/img/fruit.jpg" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="2" class="img-fluid" alt="3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
+                    <h1>Kelapa</h1>
+                    <p class="bintang">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half"></i>
+                        (4.4)
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident et ipsa, eos quisquam
+                        consectetur iure officia blanditiis incidunt sunt vel hic ipsum obcaecati? Corrupti quam
+                        provident aliquam culpa non fuga.</p>
+                    <h4 class="harga">
+                        <span class="text-warning">Rp. 10.000</span>
+                        <del class="fs-6 text-muted">Rp. 13.000</del>
+                    </h4>
+                    <p>stock : <span class="text-success fw-semibold">Available</span></p>
+                    <div class="tombol mt-lg-5">
+                        <a class="btn btn-success" href="#" role="button"><i class="bi bi-whatsapp"></i> Pesan
+                            Sekarang</a>
+                        <button type="button" class="btn btn-outline-danger ms-1"><i class="bi bi-heart-fill"></i>
+                            148</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Deskripsi</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Keunggulan</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Ulasan</button>
+                </div>
+            </nav>
+            <div class="tab-content p-1" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                    tabindex="0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quibusdam labore
+                    placeat, velit enim earum magni voluptatum ipsam dolorum repudiandae vitae eius qui maxime voluptas
+                    dignissimos eveniet, adipisci consectetur. Amet nobis inventore impedit sequi? Aspernatur veniam eum
+                    quis vel possimus qui officiis? Temporibus dolor voluptatum, dolores nam nihil odit quod?
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                    tabindex="0">
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>pertama :</strong> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Praesentium, ab eos.</li>
+                        <li class="list-group-item"><strong>kedua :</strong> Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Natus quod, labore adipisci maxime quidem tempora. Lorem ipsum dolor sit
+                            amet.</li>
+                        <li class="list-group-item"><strong>ketiga :</strong> Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Fuga, facilis perferendis.</li>
+                        <li class="list-group-item"><strong>keempat :</strong> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Cupiditate voluptatibus nisi culpa officiis omnis.</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                    tabindex="0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus animi asperiores,
+                    autem eveniet consectetur possimus odio esse, reiciendis atque harum exercitationem obcaecati neque
+                    fugit nesciunt.</div>
+            </div>
+        </div>
+    </section>
+    <!-- produk section end -->
+
+
+
+
+
+
+    <!-- Footer section start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row p-lg-5 p-md-4 p-4">
+                <div class="col-lg-3 col-md-3 p-lg-0 p-md-0 p-2">
+                    <img src="./assets/img/uncipLogo (1).jpg" class="img-fluid w-100 h-100" width="200" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-6 ">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <p class="fs-6">A108 Adam Street<br>
+                        New York, NY 535022<br>
+                        United States
+                        <br>
+                        <br>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com<br>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-2 col-6">
+                    <h4 class="ms-3">Akses Cepat</h4>
+                    <ul class="list-unstyled fw-semibold ms-3">
+                        <li class="mb-1"><a href="#home" class="text-decoration-none text-black">Home</a></li>
+                        <li class="mt-1"><a href="#about" class="text-decoration-none text-black">About</a></li>
+                        <li class="mt-1"><a href="#gallery" class="text-decoration-none text-black">Services</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#produk" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">kelapa</a></li>
+                                <li><a class="dropdown-item" href="#">fruit</a></li>
+                                <li><a class="dropdown-item" href="#">coffe</a></li>
+                            </ul>
+                        </li>
+                        <li class="mt-1"><a href="#contact" class="text-decoration-none text-black">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                    <h4>Social Networks</h4>
+                    <p class="fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione libero modi
+                        laudantium?</p>
+                    <div class="sosmed">
+                        <a class="me-2" href=""><i class="text-warning bi bi-instagram"></i></a>
+                        <a class="me-2" href=""><i class="text-warning bi bi-tiktok"></i></a>
+                        <a class="me-2" href=""><i class="text-warning bi bi-whatsapp"></i></a>
+                        <a class="me-2" href=""><i class="text-warning bi bi-envelope"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="text-center p-3 text-white bg-dark mt-lg-0 mt-md-0 mt-4">
+            © 2024 Copyright :
+            <a href="" class=" text-white text-decoration-none">Distech Management</a>
+            <br>
+            <span style="font-size: 12px;">Designed by <a href="https://www.instagram.com/afiz_muhamad/" target="_blank"
+                    class="text-decoration-none text-warning">@syedmhafizf</a></span>
+        </div>
+    </footer>
+    <!-- Footer section end -->
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.getElementById("navbar");
+
+            // Set a scroll event listener
+            window.addEventListener("scroll", function () {
+                // Add a background class when scrolling
+                if (window.scrollY > 0) {
+                    navbar.classList.add("navbar-scrolled");
+                } else {
+                    // Remove the background class when at the top
+                    navbar.classList.remove("navbar-scrolled");
+                }
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+.navbar {
+    transition: background-color 0.3s ease;
+    /* Add a smooth transition effect for background color change */
+}
+
+/* Additional style for the navbar when scrolled */
+.navbar-scrolled {
+    background-color: #eaeaea;
+    /* Change this to the background color you want when scrolled */
+}
+
+.team {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.team .member {
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+    transition: 0.3s;
+}
+
+.team .member .member-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team .member .member-img:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    z-index: 1;
+}
+
+.team .member .social {
+    position: absolute;
+    right: -100%;
+    top: 30px;
+    opacity: 0;
+    border-radius: 4px;
+    transition: 0.5s;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 2;
+}
+
+.team .member .social a {
+    transition: color 0.3s;
+    margin: 15px 12px;
+    color: #ffd700;
+    display: block;
+    line-height: 0;
+    text-align: center;
+}
+
+.team .member .social a:nth-child(1) {
+    color: #1DA1F2;
+}
+
+.team .member .social a:nth-child(2) {
+    color: #4267B2;
+}
+
+.team .member .social a:nth-child(3) {
+    color: #405DE6;
+}
+
+.team .member .social a:nth-child(4) {
+    color: #25D366;
+}
+
+.team .member .social i {
+    font-size: 18px;
+}
+
+.team .member .member-info {
+    padding: 10px 15px 20px 15px;
+}
+
+.team .member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #000;
+}
+
+.team .member .member-info span {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4e4e4e;
+}
+
+.team .member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 15px;
+    line-height: 26px;
+    color: #5e5e5e;
+}
+
+.team .member:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.team .member:hover .social {
+    right: 8px;
+    opacity: 1;
+}
+
+/* contact */
+.contact .info-box {
+    color: #000;
+    background: #f4f4f4;
+    border-radius: 6px;
+}
+
+.contact .info-box i {
+    color: #000;
+}
+
+.contact .php-email-form {
+    padding: 34px;
+    background: #f4f4f4;
+}
+
+.contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+}
+
+.contact .php-email-form button[type=submit] {
+    background: #ffd700;
+    border: 0;
+    padding: 10px 30px;
+    color: #000;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+    background: #000;
+    color: var(--navy);
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    background-color: #eaeaea;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .produk .produks .card {
+        margin-left: -20px;
+    }
+
+    .gallery .last {
+        height: 120px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gallery .last {
+        height: 193px !important;
+    }
+}
