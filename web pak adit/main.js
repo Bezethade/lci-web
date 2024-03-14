@@ -1,17 +1,12 @@
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
-  // Inisialisasi Lightbox
-  lightbox.option({
-    resizeDuration: 200,
-    wrapAround: true,
-  });
+  const navbar = document.querySelector(".navbar");
 
-  // Inisialisasi galeri dengan Lightbox
-  const galleryItems = document.querySelectorAll(".portfokio-lightbox");
-  galleryItems.forEach(function (item) {
-    item.setAttribute("data-lightbox", "portfolioGallery");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      navbar.classList.add("navbar-colored");
+    } else {
+      navbar.classList.remove("navbar-colored");
+    }
   });
 });
 
@@ -55,6 +50,3 @@ filterContainer.addEventListener("click", (event) => {
     });
   }
 });
-
-
-

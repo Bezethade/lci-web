@@ -1,6 +1,11 @@
-.navbar {
+.navbar-transparent {
+    background-color: transparent !important;
     transition: background-color 0.3s ease;
-    /* Add a smooth transition effect for background color change */
+}
+
+.navbar-colored {
+    background-color: #0d6efd !important;
+    /* Ganti dengan warna yang diinginkan */
 }
 
 .navbar .offcanvas {
@@ -8,11 +13,6 @@
     width: 70% !important;
 }
 
-/* Additional style for the navbar when scrolled */
-.navbar-scrolled {
-    background-color: #fff;
-    /* Change this to the background color you want when scrolled */
-}
 
 .navbar-brand img {
     position: absolute;
