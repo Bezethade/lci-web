@@ -19,22 +19,31 @@
 
 <body>
     <!-- navbar section start -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top" id="navbar">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./assets/img/manhataa.png" alt="Bootstrap" width="100" height="78">
+                <img src="./assets/img/manhataa.png" alt="Bootstrap" width="73" height="73">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-lg-auto ms-2 mb-2 mb-lg-0">
-                    <li class="nav-item  ms-2">
-                        <a class="nav-link text-black" aria-current="page" href="index.html">Home</a>
-                    </li>
-                </ul>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/img/manhataa.png" alt="Bootstrap" style="left: 0;">
+                        </a>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body mt-lg-0 mt-md-5 mt-5">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-lg-0 mt-md-5 mt-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -221,26 +230,23 @@
 
 
 
-    <!-- Footer section start -->
+    <!-- footer section start -->
     <footer class="footer bg-white border-top">
         <div class="container">
             <div class="row p-lg-5 p-md-4 p-4">
                 <div class="col-lg-4 col-12 p-lg-0 p-md-0 p-2">
                     <img src="./assets/img/manhataa.png" class="img-fluid bg-white shadow-sm" width="200" alt="">
                 </div>
-                <div class="col-lg-4 col-12">
-                    <h4>Manhata</h4>
-                    <p class="fs-6">Jl. Tol Tahi Bonar Simatupang, RT.6/RW.14, Pd. Pinang, Kec. Kby. Lama, Kota Jakarta
-                        Selatan, Daerah Khusus
-                        Ibukota Jakarta 12310
-                        <br>
-                        <br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
+                <div class="col-lg-4 col-12 mb-lg-3">
+                    <h5 class="fw-bold">PT manhata prisma inovasi</h5>
+                    <p class="fs-6">
+                        <strong>Phone:</strong> +62 812-2358-2795<br>
+                        <strong>Email:</strong> <a href="" class="text-black text-decoration-none">
+                            <a href="" class="text-black text-decoration-none">info@lcicommoditiesina.com</a>
                     </p>
                 </div>
                 <div class="col-lg-4 col-12">
-                    <h4 class="ms-3">Akses Cepat</h4>
+                    <h5 class="ms-3 fw-bold">Akses Cepat</h5>
                     <ul class="list-unstyled  ms-3">
                         <li class="mb-1"><a href="index.html" class="text-decoration-none text-black">Home</a></li>
                     </ul>
@@ -255,7 +261,7 @@
                     class="text-decoration-none text-white fw-semibold">Distech Management</a></span>
         </div>
     </footer>
-    <!-- Footer section end -->
+    <!-- footer section end -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
