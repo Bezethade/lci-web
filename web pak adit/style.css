@@ -14,6 +14,7 @@
 }
 
 
+
 .navbar-brand img {
     position: absolute;
     top: -10px;
@@ -330,6 +331,9 @@ img {
         margin-top: 10px;
         text-align: center;
     }
+        .offcanvas .nav-link {
+            color: #000 !important;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -367,6 +371,10 @@ img {
         margin-top: 10px;
         text-align: center;
     }
+
+        .offcanvas .nav-link {
+            color: #000 !important;
+        }
 
     .produk .overlay a {
         margin-top: 150px;
