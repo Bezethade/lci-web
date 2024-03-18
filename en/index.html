@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lci</title>
+    <!-- my css -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+
+
+
+
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- navbar section start -->
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/img/manhataa.png" alt="Bootstrap" width="95" height="95">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <a class="navbar-brand" href="#">
+                            <img src="/assets/img/manhataa.png" class="img-fluid" alt="Bootstrap" style="left: 0;">
+                        </a>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body mt-lg-0 mt-md-5 mt-5">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-lg-0 mt-md-5 mt-5">
+                        <li class="nav-item">
+                            <a class="fs-5 nav-link text-white" aria-current="page"
+                                href="#carouselExampleAutoplaying">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="fs-5 nav-link text-white" href="#about">About</a>
+                        </li>
+                        <li class="nav-item dropdown ms-lg-0 ms-md-3">
+                            <a class="fs-5 nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/en/fruit.html">Fruit</a></li>
+                                <li><a class="dropdown-item" href="/en/vegetables.html">Vegetables</a></li>
+                                <li><a class="dropdown-item" href="/en/featured.html">Featured Product</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="fs-5 nav-link text-white" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="fs-5 nav-link text-white" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="fs-5 nav-link btn dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-translate text-white"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/id/index.html">Indonesia</a></li>
+                                <li><a class="dropdown-item" href="/en/index.html">English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar section end -->
+
+    <!-- carousel section start -->
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active ratio ratio-16x9">
+                <img src="/assets/img/kelapa.jpg" class="d-block w-100 object-fit-fill" alt="...">
+                <div class="card-img-overlay align-items-center justify-content-center d-flex p-3">
+                    <h3 class="card-title text-white mb-3 text-center">LCI<br>(Leading Commodities Indonesia)</h3>
+                </div>
+            </div>
+            <div class="carousel-item ratio ratio-16x9">
+                <img src="/assets/img/kopi.jpg" class="d-block w-100 object-fit-fill" alt="...">
+                <div class="card-img-overlay align-items-center justify-content-center d-flex p-3">
+                    <h3 class="card-title text-white mb-3 text-center">LCI<br>(Leading Commodities Indonesia)</h3>
+                </div>
+            </div>
+            <div class="carousel-item ratio ratio-16x9">
+                <img src="/assets/img/mango.jpg" class="d-block w-100 object-fit-fill" alt="...">
+                <div class="card-img-overlay align-items-center justify-content-center d-flex p-3">
+                    <h3 class="card-title text-white mb-3 text-center">LCI<br>(Leading Commodities Indonesia)</h3>
+                </div>
+            </div>
+            <div class="carousel-item ratio ratio-16x9">
+                <img src="/assets/img/ubi.jpg" class="d-block w-100 object-fit-fill" alt="...">
+                <div class="card-img-overlay align-items-center justify-content-center d-flex p-3">
+                    <h3 class="card-title text-white mb-3 text-center">LCI<br>(Leading Commodities Indonesia)</h3>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- carousel section end -->
+
+    <!-- about section start -->
+    <section id="about" class="about p-2 bg-info-subtle pt-5">
+        <div class="container">
+            <div class="row d-flex justify-content-around">
+                <div class="col-lg-6 col-md-4 col-12 mt-md-5">
+                    <img src="/assets/img/ss-removebg-preview.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 col-md-8 col-12 p-5">
+                    <span class="badge text-bg-primary">About</span>
+                    <h2 class="fs-1 fw-normal">About Us</h2>
+                    <p class="lh-lg">Welcome to Manhata, where innovation and sustainability harmoniously blend. From
+                        Fruit, Vegetables and Some Feature
+                        Products each of our products embodies our commitment to sustainability and superior quality.
+                        Join us in exploring a
+                        lifestyle that is both classy and responsible, unveiling the wonders of nature through every
+                        creation at Manhata.
+                        Together, let's craft unforgettable experiences. Manhata - presenting inspiration from nature
+                        for a better life, while
+                        adding a touch of significance to every moment.</p>
+
+                </div>
+                <div class="col-lg-5 col-md-5 col-12 shadow-sm p-4">
+                    <ul class="list-unstyled">
+                        <li class="fs-5">Vision</li>
+                        <li>to become the leading Indonesian commodities supplier worldwide</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-5 col-12 shadow-sm p-4">
+                    <ul>Mission
+                        <ul>
+                            <li>Providing services that meet international standards and service quality that
+                                provides satisfaction</li>
+                            <li>Providing and fulfilling the needs of superior quality and competitive value</li>
+                            <li>Conducting research on the latest global market needs</li>
+                        </ul>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts bg-info-subtle">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="count-box">
+                        <img src="/assets/icon/honesty.svg" class="img-fluid w-25" alt="">
+                        <div>
+                            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                                class="purecounter"></span>
+                            <p>TRUSTWORTHY</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="count-box">
+                        <img src="/assets/icon/quality-control.svg" class="img-fluid w-25" alt="">
+                        <div>
+                            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                                class="purecounter"></span>
+                            <p>QUALITY</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="count-box">
+                        <img src="/assets/icon/collaborate_6808956.svg" class="img-fluid w-25" alt="">
+                        <div>
+                            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                                class="purecounter"></span>
+                            <p>INTEGRITY</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="count-box">
+                        <img src="/assets/icon/satisfaction.svg" class="img-fluid w-25" alt="">
+                        <div>
+                            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                                class="purecounter"></span>
+                            <p>SATISFACTORY</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Counts Section -->
+
+    <!-- about section end -->
+
+    <!-- produk section start -->
+    <section class="produk mt-5 mt-md-0 p-md-5 p-1">
+        <div class="container">
+            <span class="badge text-bg-primary  mt-5 mb-5 ms-lg-5 ms-3">Product</span>
+            <div
+                class="produks row row-cols-lg-3 row-cols-md-3 row-cols-1 g-lg-5 g-md-3 g-5 d-flex ms-xl-5 ms-lg-5 ms-5 me-lg-5 mt-md-3 mt-5">
+                <div class="col">
+                    <div class="card border-0 rounded-4 bg-primary p-1 mt-md-0 mt-4" style="width: 13rem;">
+                        <div class="card-body">
+                            <div class="icon d-flex position-relative">
+                                <img src="/assets/icon/fruit.svg"
+                                    class=" m-auto w-100 bg-white rounded-circle shadow position-absolute top-0 start-50 translate-middle"
+                                    alt="">
+                            </div>
+                            <div class="icon d-flex justify-content-center" style="margin-top: 90px;">
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-fill fs-4"></i></p>
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-fill fs-4"></i></p>
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-fill fs-4"></i></p>
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-fill fs-4"></i></p>
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-half"></i></p>
+                            </div>
+                            <div class="p-1">
+                                <h6 class="fs-5 card-title text-center text-white">Fruit</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 rounded-4 bg-primary p-1 mt-md-0 mt-5" style="width: 13rem;">
+                        <div class="card-body">
+                            <div class="icon d-flex position-relative">
+                                <img src="/assets/img/3663192.jpg"
+                                    class=" m-auto w-100 bg-white rounded-circle shadow position-absolute top-0 start-50 translate-middle"
+                                    alt="">
+                            </div>
+                            <div class="icon d-flex justify-content-center" style="margin-top: 90px;">
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-fill fs-4"></i></p>
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-fill fs-4"></i></p>
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-fill fs-4"></i></p>
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-fill fs-4"></i></p>
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-half"></i></p>
+                            </div>
+                            <div class="p-1">
+                                <h6 class="fs-5 card-title text-center text-white">Vegetables</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 rounded-4 bg-primary p-1 mt-md-0 mt-5" style="width: 13rem;">
+                        <div class="card-body">
+                            <div class="icon d-flex position-relative">
+                                <img src="/assets/icon/coconut.svg"
+                                    class=" m-auto w-100 bg-white rounded-circle shadow position-absolute top-0 start-50 translate-middle"
+                                    alt="">
+                            </div>
+                            <div class="icon d-flex justify-content-center" style="margin-top: 90px;">
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-fill fs-4"></i></p>
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-fill fs-4"></i></p>
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-fill fs-4"></i></p>
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-fill fs-4"></i></p>
+                                <p class="fs-4" style="color: #ffd700;"><i class="bi bi-star-half"></i></p>
+                            </div>
+                            <div class="p-1">
+                                <h6 class="fs-5 card-title text-center text-white">Featured Product</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- data produk -->
+        <div class="container m-auto">
+            <div id="produk" class="gallery">
+
+                <div class="row row-cols-5">
+
+                    <ul class="gallery-filter w-100 mb-2 text-center">
+                        <li class="filter-item active" data-filter="all">All</li>
+                        <li class="filter-item" data-filter="fruit">Fruit</li>
+                        <li class="filter-item" data-filter="vegetables">Vegetables</li>
+                        <li class="filter-item" data-filter="featured">Featured Product</li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <!-- gallery item coconut -->
+                    <div class="col-lg-4 gallery-item featured">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/rbd2.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/rbdCno.html" class="mt-lg-5" title="More Details"><i class="bi bi-link"
+                                        style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Refined Coconut Oil</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gallery-item featured">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/vco1.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/vco.html" class="mt-lg-5" title="More Details"><i class="bi bi-link"
+                                        style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Virgin Coconut Oil</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gallery-item featured">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/csugar3.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/coconutsugar.html" class="mt-lg-5" title="More Details"><i
+                                        class="bi bi-link" style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Coconut sugar</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gallery-item featured">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/desic1.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/desicatedcoconut.html" class="mt-lg-5" title="More Details"><i
+                                        class="bi bi-link" style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Desiccated Coconut</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gallery-item featured">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/copra1.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/copra.html" class="mt-lg-5" title="More Details"><i class="bi bi-link"
+                                        style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Copra</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gallery-item featured">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/ccb2.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/ccb.html" class="mt-lg-5" title="More Details"><i class="bi bi-link"
+                                        style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Coconut Charcoal Briquette</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gallery-item featured">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/cf2.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/cocoFiber.html" class="mt-lg-5" title="More Details"><i class="bi bi-link"
+                                        style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Coconut Fiber</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gallery-item featured">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/cocob1.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/coblock.html" class="mt-lg-5" title="More Details"><i class="bi bi-link"
+                                        style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Cocopeat Block</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gallery-item featured">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/shc3.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/shc.html" class="mt-lg-5" title="More Details"><i class="bi bi-link"
+                                        style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Semi Husked Coconut</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gallery-item featured">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/fc3.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/fc.html" class="mt-lg-5" title="More Details"><i class="bi bi-link"
+                                        style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Fresh Coconut</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery coconut end -->
+
+                    <!-- gallery item fruit -->
+                    <div class="col-lg-4 gallery-item fruit">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/arab2.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/arab.html" class="mt-lg-5" title="More Details"><i class="bi bi-link"
+                                        style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Arabica Green Beans</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gallery-item fruit">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/robusta1.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/robusta.html" class="mt-lg-5" title="More Details"><i class="bi bi-link"
+                                        style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Robusta Green Beans</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gallery-item fruit">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/blend2.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/blend.html" class="mt-lg-5" title="More Details"><i class="bi bi-link"
+                                        style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Blend Coffee</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gallery-item fruit">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/mango2.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/mango.html" class="mt-lg-5" title="More Details"><i class="bi bi-link"
+                                        style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Mangosteen</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery fruit end -->
+
+                    <!-- gallery item vegetables -->
+                    <div class="col-lg-4 gallery-item vegetables">
+                        <div class="gallery-item-inner">
+                            <img src="/assets/img/sweet3.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <a href="/en/sweet.html" class="mt-lg-5" title="More Details"><i class="bi bi-link"
+                                        style="font-size: 55px;"></i></a>
+                                <h4 class="fs-6">Sweet Potato</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery vegetables end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- produk section end -->
+
+
+    <!-- team section start -->
+    <section id="team" class="bg-info-subtle team p-5">
+        <div class="container">
+            <span class="badge text-bg-primary  mt-5 mb-5">Team</span>
+            <div class="row gy-4 justify-content-center">
+                <div class="col-lg-4 col-md-5 d-flex align-items-start">
+                    <div class="member rounded-2">
+                        <div class="member-img">
+                            <div class="ratio ratio-1x1">
+                                <img src="/assets/img/mukti.jpg" class="img-fluid object-fit-cover rounded-2"
+                                    alt="kerma">
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-whatsapp"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h6>Mukti Bawono, S.M.,MBA</h6>
+                            <span>Chief Executive Officer</span>
+                            <p class="mt-xl-3 mt-lg-3 mt-md-3">"Stay innovative, be pioneers, and embrace new ideas. We
+                                are the force of
+                                change for the
+                                best future of our company.
+                                Through creativity and hard work, we can unearth untapped opportunities and achieve
+                                success together.".</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+                    <div class="member rounded-2">
+                        <div class="member-img">
+                            <div class="ratio ratio-1x1">
+                                <img src="/assets/img/pak adit.jpg" class="img-fluid object-fit-cover rounded-2"
+                                    alt="kerma">
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-whatsapp"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h6>Aditia Abdurachman, S.M.,MBA</h6>
+                            <span>Chief Operating Officer</span>
+                            <p style="margin-top: -10px !important;">"As the COO, our focus is on operational excellence
+                                and efficiency. Together, let's
+                                streamline workflows, foster
+                                collaboration, and drive sustained success by leveraging precision and innovation in our
+                                operations.".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- team section end -->
+
+
+    <!-- contact section start -->
+    <section id="contact" class="contact mt-3">
+        <div class="container p-4 mb-3 bg-info-subtle rounded-5">
+            <div class="row">
+                <div class="col text-center">
+                    <span class="badge m-2 text-bg-primary mb-3">Our Contact</span>
+                </div>
+                <p class="text-center">Join us in an unforgettable shopping experience. High-quality products and
+                    top-notch service await you!</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.792787629727!2d106.784154!3d-6.290943099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1dac777f601%3A0xc54426e320e0a201!2sPlaza%20Aminta%2C%20Jl.%20Tol%20Tahi%20Bonar%20Simatupang%2C%20RT.6%2FRW.14%2C%20Pd.%20Pinang%2C%20Kec.%20Kby.%20Lama%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012310!5e0!3m2!1sid!2sid!4v1709743572952!5m2!1sid!2sid"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        class="w-100 h-100 img-fluid rounded-3"></iframe>
+                </div>
+                <div class="col-lg-6 mt-lg-6 mt-md-5 mt-sm-1">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+
+                                <div class="col-lg-12 d-flex mt-4">
+                                    <div class="me-3">
+                                        <h3><i class="bi bi-telephone-plus"></i></h3>
+                                    </div>
+                                    <div class="col mt-1">
+                                        <p class="fs-6">+62-821-2985-0120</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 d-flex mt-4">
+                                    <div class="me-3">
+                                        <h3><i class="bi bi-envelope-at"></i></h3>
+                                    </div>
+                                    <div class="col mt-1">
+                                        <p class="fs-6">sales@lcicommoditiesina.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section end -->
+
+
+
+    <!-- Footer section start -->
+    <footer class="footer bg-white border-top">
+        <div class="container">
+            <div class="row p-lg-5 p-md-4 p-4">
+                <div class="col-lg-4 col-12 p-lg-0 p-md-0 p-2">
+                    <img src="/assets/img/manhataa.png" class="img-fluid bg-white shadow-sm" width="200" alt="">
+                </div>
+                <div class="col-lg-4 col-12 mb-lg-3">
+                    <h5 class="fw-bold">PT manhata prisma inovasi</h5>
+                    <p class="fs-6">
+                        <strong>Phone:</strong> +62-821-2985-0120<br>
+                        <strong>Email:</strong> <a href="" class="text-black text-decoration-none">
+                            <a href="" class="text-black text-decoration-none">sales@lcicommoditiesina.com</a>
+                    </p>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <h5 class="ms-3 fw-bold">Akses Cepat</h5>
+                    <ul class="list-unstyled  ms-3">
+                        <li class="mb-1"><a href="#carouselExampleAutoplaying"
+                                class="text-decoration-none text-black">Home</a></li>
+                        <li class="mt-1"><a href="#about" class="text-decoration-none text-black">About</a></li>
+                        <li class="nav-item dropdown text-start">
+                            <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/en/fruit.html">Fruit</a></li>
+                                <li><a class="dropdown-item" href="/en/vegetables.html">Vegetables</a></li>
+                                <li><a class="dropdown-item" href="/en/featured.html">Featured Product</a></li>
+                            </ul>
+                        </li>
+                        <li class="mt-1"><a href="#team" class="text-decoration-none text-black">Team</a></li>
+                        <li class="mt-1"><a href="#contact" class="text-decoration-none text-black">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 text-white bg-primary mt-lg-0 mt-md-0 mt-4">
+            © 2024 Copyright
+            <a href="" class=" text-white text-decoration-none">Manhata Group</a>
+            <br>
+            <span style="font-size: 12px;">Powered By <a href="#"
+                    class="text-decoration-none text-white fw-semibold">Distech Management</a></span>
+        </div>
+    </footer>
+    <!-- Footer section end -->
+
+    <!-- icon wa -->
+    <a href="https://wa.me/+6282129850120" target="_blank" class="fixed-bottom d-flex justify-content-end  p-2">
+        <h1 class="p-2 wa"><i class="bi bi-whatsapp text-success"></i></h1>
+    </a>
+
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/main.js"></script>
+
+</body>
+
+</html>
